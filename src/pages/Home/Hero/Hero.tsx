@@ -47,22 +47,7 @@ const Hero = () => {
                         <Typography color='primary.contrastText' variant='h1' textAlign="center" pb={2}>Kauã Santos</Typography>
                         <Typography color='primary.contrastText' variant='h2' textAlign="center">I'm a Software Developer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log('download')}>
-                                <DownloadIcon/>
-                                    <Typography>
-                                        Donwload CV
-                                    </Typography>        
-                                </StyledButton>
-                            </Grid>
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log('contact')}>
-                                    <EmailIcon/>
-                                    <Typography>
-                                        Contact Me
-                                    </Typography>      
-                                </StyledButton>
-                            </Grid>
+
                         </Grid>         
                     </Grid>
                 </Grid>

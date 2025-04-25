@@ -10,7 +10,7 @@ let theme = createTheme({
       },
     },
     typography: {
-        fontFamily: "Segoe UI"
+      fontFamily: 'VT323, monospace',
     }
     
   });
