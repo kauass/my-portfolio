@@ -41,7 +41,7 @@ const NeonButton = styled(Button)(() => ({
   background: "linear-gradient(90deg, #00f2ff, #8a2be2)",
   color: "#fff",
   fontWeight: "bold",
-  boxShadow: "0 0 10px #00f2ff",
+  boxShadow: "0 0 1px #00f2ff",
   "&:hover": {
     background: "linear-gradient(90deg, #8a2be2, #00f2ff)"
   }
@@ -56,9 +56,7 @@ const Projects = () => {
   return (
     <StyledProjects>
       <Container maxWidth="lg">
-        <Typography variant="h3" sx={{ color: "#00f2ff", textAlign: "center", marginBottom: "40px" }}>
-          Projetos Pessoais
-        </Typography>
+ 
         <Grid container spacing={4}>
           {projetos.map((projeto, index) => (
             <Grid item xs={12} md={6} key={index}>

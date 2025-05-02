@@ -38,29 +38,25 @@ const StyledSkills = styled("div")(() => ({
 const SkillCard = styled(Box)(() => ({
   backgroundColor: "#161b22",
   borderRadius: "12px",
-  padding: "20px",
-  boxShadow: "0 0 10px #00f2ff33",
+  padding: "10px",
   transition: "transform 0.3s ease",
   textAlign: "center",
   "&:hover": {
     transform: "scale(1.05)",
-    boxShadow: "0 0 20px #00f2ffaa"
+    boxShadow: "0 0 5px #00f2ffaa"
   }
 }));
 
 const SkillImage = styled("img")(() => ({
-  height: "64px",
+  height: "40px",
   marginBottom: "10px",
-  filter: "drop-shadow(0 0 4px #00f2ff)"
 }));
 
 const Skills = () => {
   return (
     <StyledSkills>
       <Container maxWidth="md">
-        <Typography variant="h3" sx={{ color: "#00f2ff", textAlign: "center", marginBottom: "40px" }}>
-          Minhas Skills
-        </Typography>
+  
 
         {skillCategories.map((categoria, i) => (
           <Box key={i} mb={6}>
