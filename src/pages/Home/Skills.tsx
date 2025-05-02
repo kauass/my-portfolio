@@ -1,12 +1,13 @@
 import { Container, Typography, Box, Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { AnimatedBackground } from '../../components/AnimatedBackground/AnimatedBackground';
 
 const skillCategories = [
     {
       titulo: "Front-End",
       tecnologias: [
-        { nome: "HTML", imagem: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-        { nome: "CSS", imagem: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { nome: "React", imagem: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { nome: "Vue.js", imagem: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
         { nome: "JavaScript", imagem: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
         { nome: "TypeScript", imagem: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" }
       ]
@@ -29,14 +30,14 @@ const skillCategories = [
   
 
 const StyledSkills = styled("div")(() => ({
-  backgroundColor: "#0d1117",
+  backgroundColor: "#232323",
   color: "#fff",
   minHeight: "100vh",
   padding: "100px 0"
 }));
 
 const SkillCard = styled(Box)(() => ({
-  backgroundColor: "#161b22",
+  backgroundColor: "#232323",
   borderRadius: "12px",
   padding: "10px",
   transition: "transform 0.3s ease",
@@ -54,7 +55,11 @@ const SkillImage = styled("img")(() => ({
 
 const Skills = () => {
   return (
+    
     <StyledSkills>
+       <Box position="absolute" width={"40%"} top={-100} right={600}>
+            <AnimatedBackground/>
+      </Box>  
       <Container maxWidth="md">
   
 
@@ -63,7 +68,7 @@ const Skills = () => {
             <Typography variant="h5" sx={{ color: "#58a6ff", mb: 2 }}>
               {categoria.titulo}
             </Typography>
-
+            
             <Grid container spacing={4}>
               {categoria.tecnologias.map((tec, j) => (
                 <Grid item xs={6} sm={4} md={3} key={j}>

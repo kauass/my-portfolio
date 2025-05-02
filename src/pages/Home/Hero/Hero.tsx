@@ -20,15 +20,13 @@ const Hero = () => {
           paddingTop: "0", 
         },
       }));
-      
 
       const StyledImg = styled("img")(({ theme }) => ({
         width: "90%",
         borderRadius: "60%",
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      
       }));
       
-
     return (
       <>
          <StyledHero>
