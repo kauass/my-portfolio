@@ -8,18 +8,20 @@ import { AnimatedBackground } from '../../../components/AnimatedBackground/Anima
 
 const Hero = () => {
 
-    const StyledHero = styled("div")(({theme})=> ({
+    const StyledHero = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
-        height: "100vh",
+        height: "100dvh",
+        boxSizing: "border-box",
         display: "flex",
         alignItems: "center",
-        [theme.breakpoints.up('xs')]: { // <=mobile
-          paddingTop: "100px"
+        paddingTop: 0,
+        [theme.breakpoints.down("md")]: {
+          flexDirection: "column",
+          justifyContent: "center",
+          paddingTop: "0", 
         },
-        [theme.breakpoints.up('md')]: { // >=mobile
-            paddingTop: "0"
-          }
-    }))
+      }));
+      
 
     const StyledImg = styled("img")(({theme})=> ({
        width: "90%",
