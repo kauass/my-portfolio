@@ -7,14 +7,14 @@ const projetos = [
   {
     nome: "Codar",
     descricao: "Site pessoal para mostrar minhas habilidades e projetos.",
-    tecnologias: ["React", "Material UI", "React Router"],
+    tecnologias: ["HTML", "CSS3"],
     link: "https://github.com/kauass/Codar",
     imagem: codarImg
   },
   {
     nome: "Ecommerce NFT",
-    descricao: "Uma API REST para listar filmes populares usando Node.js e MongoDB.",
-    tecnologias: ["Node.js", "Express", "MongoDB"],
+    descricao: "Site pessoal para mostrar minhas habilidades e projetos.",
+    tecnologias: ["HTML", "CSS3"],
     link: "https://github.com/seuusuario/filmes-api",
     imagem: nftImg
   },
