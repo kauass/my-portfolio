@@ -22,9 +22,9 @@ const Hero = () => {
     }))
 
     const StyledImg = styled("img")(({theme})=> ({
-       width: "80%",
+       width: "90%",
        borderRadius: "60%",
-       border: `1px solid ${theme.palette.primary.contrastText}`
+     
     }))
 
     return (
