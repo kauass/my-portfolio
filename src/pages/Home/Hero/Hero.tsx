@@ -1,15 +1,12 @@
 import { styled } from '@mui/material/styles';
 import Avatar from "../../../assets/images/profile.jpeg"
 import { Container, Typography, Grid, Box} from '@mui/material';
-import DownloadIcon from '@mui/icons-material/Download';
-import EmailIcon from '@mui/icons-material/Email';
-import StyledButton from '../../../components/styledButton/styledButton';
 import { AnimatedBackground } from '../../../components/AnimatedBackground/AnimatedBackground';
 
 const Hero = () => {
     const StyledHero = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
-        height: "100dvh",
+        height: "100vh",
         boxSizing: "border-box",
         display: "flex",
         alignItems: "center",

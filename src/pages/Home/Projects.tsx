@@ -8,14 +8,14 @@ const projetos = [
     nome: "Codar",
     descricao: "Site pessoal para mostrar minhas habilidades e projetos.",
     tecnologias: ["HTML", "CSS3"],
-    link: "https://github.com/kauass/Codar",
+    link: "https://kauass.github.io/Codar/",
     imagem: codarImg
   },
   {
     nome: "Ecommerce NFT",
     descricao: "Site pessoal para mostrar minhas habilidades e projetos.",
     tecnologias: ["HTML", "CSS3"],
-    link: "https://github.com/seuusuario/filmes-api",
+    link: "https://kauass.github.io/NFT-project/",
     imagem: nftImg
   },
 ]
